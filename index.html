@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Find Your Music Genre</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+
+<body>
+  <main class="app">
+    <h1>🎧 Find Your Music Genre</h1>
+
+    <div class="card">
+      <label>Pick a vibe:</label>
+      <select id="q1">
+        <option value="">Select</option>
+        <option value="night">Night drive</option>
+        <option value="gym">Gym</option>
+        <option value="study">Studying</option>
+        <option value="party">Party</option>
+      </select>
+
+      <label>Your energy:</label>
+      <select id="q2">
+        <option value="">Select</option>
+        <option value="low">Low</option>
+        <option value="mid">Medium</option>
+        <option value="high">High</option>
+      </select>
+
+      <label>Pick a sound:</label>
+      <select id="q3">
+        <option value="">Select</option>
+        <option value="soft">Soft / emotional</option>
+        <option value="beats">Heavy beats</option>
+        <option value="upbeat">Upbeat / catchy</option>
+        <option value="raw">Loud / raw</option>
+      </select>
+
+      <button id="btn">Find My Genre</button>
+    </div>
+
+    <div id="result" class="result hidden">
+      <h2 id="genre"></h2>
+      <p id="desc"></p>
+      <ul id="songs"></ul>
+      <button id="reset">Try Again</button>
+    </div>
+  </main>
+</body>
+</html>
